@@ -1,8 +1,10 @@
+/*
 // Get a reference to the body element
 var body = document.querySelector('body');
 
 // Set the display property to none
 body.style.display = 'none';
+*/
 /* Smooth Scroll */
 const lenis = new Lenis({
     duration: 1.6, // Time in seconds for the scroll animation
