@@ -1,3 +1,8 @@
+// Get a reference to the body element
+var body = document.querySelector('body');
+
+// Set the display property to none
+body.style.display = 'none';
 /* Smooth Scroll */
 const lenis = new Lenis({
     duration: 1.6, // Time in seconds for the scroll animation
@@ -16,7 +21,7 @@ const lenis = new Lenis({
 
   requestAnimationFrame(raf)
 /* back to top */
-/*
+
 document.getElementById("scrollToTopBtn").onclick = function() {
   scrollToTop();
 };
@@ -79,4 +84,3 @@ if (window.innerWidth >= 991) {
       markers: false
     }
   });
-*/
