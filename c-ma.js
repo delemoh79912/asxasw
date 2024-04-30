@@ -1,4 +1,5 @@
 /* Smooth Scroll */
+/*
 const lenis = new Lenis({
     duration: 1.6, // Time in seconds for the scroll animation
     easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)), // Easing function for the animation
@@ -15,6 +16,7 @@ const lenis = new Lenis({
   }
 
   requestAnimationFrame(raf)
+*/
 /* back to top */
 document.getElementById("scrollToTopBtn").onclick = function() {
   scrollToTop();
