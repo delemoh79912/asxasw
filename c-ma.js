@@ -16,7 +16,7 @@ const lenis = new Lenis({
 
   requestAnimationFrame(raf)
 /* back to top */
-
+/*
 document.getElementById("scrollToTopBtn").onclick = function() {
   scrollToTop();
 };
@@ -79,3 +79,4 @@ if (window.innerWidth >= 991) {
       markers: false
     }
   });
+*/
