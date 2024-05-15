@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    const container = $('#containerrr');
+    const container = $('#container');
     const parent = $('#parent');
     const follower = $('#follower');
     const clipSize = 160;
