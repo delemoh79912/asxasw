@@ -2,7 +2,7 @@ $(document).ready(function() {
     const container = $('#container');
     const parent = $('#parent');
     const follower = $('#follower');
-    const clipSize = 160;
+    const clipSize = 200;
 
     parent.mousemove(function(e) {
       const containerRect = container[0].getBoundingClientRect();
@@ -14,7 +14,7 @@ $(document).ready(function() {
       const clipX = (mouseX / parentRect.width) * 100;
       const clipY = (mouseY / parentRect.height) * 100;
 
-      container.css('clip-path', `circle(80px at ${clipX}% ${clipY}%)`);
+      container.css('clip-path', `circle(100px at ${clipX}% ${clipY}%)`);
       
       follower.css('left', mouseX - clipSize / 2 + 'px');
       follower.css('top', mouseY - clipSize / 2 + 'px');
