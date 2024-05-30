@@ -24,6 +24,7 @@ const lenis = new Lenis({
   requestAnimationFrame(raf)
 /* back to top */
 
+/*
 document.getElementById("scrollToTopBtn").onclick = function() {
   scrollToTop();
 };
@@ -36,6 +37,10 @@ function scrollToTop() {
     window.scrollTo(0, currentScroll - currentScroll / 15);
   }
 }
+*/
+document.getElementById("scrollToTopBtn").onclick = function() {
+      lenis.scrollTo(0); // Scroll to the top
+    };
 
 const revealTypeElements = document.querySelectorAll('.reveal-type');
 revealTypeElements.forEach(element => {
