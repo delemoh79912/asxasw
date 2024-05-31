@@ -35,6 +35,10 @@ document.getElementById("scrollToTopBtn").onclick = function() {
       lenis.scrollTo(0); // Scroll to the top
     };
 
+document.getElementById("q1").onclick = function() {
+      lenis.resize(); // Scroll to the top
+    };
+
 const revealTypeElements = document.querySelectorAll('.reveal-type');
 revealTypeElements.forEach(element => {
     if (!element.getAttribute('data-bg-color')) {
