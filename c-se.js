@@ -36,7 +36,7 @@ document.getElementById("scrollToTopBtn").onclick = function() {
     };
 
 document.getElementById("q1").onclick = function() {
-      lenis.resize();
+      setTimeout(() => lenis.resize(), 300);
       console.log('Lenis resize method called');
     };
 
