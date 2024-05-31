@@ -35,7 +35,7 @@ document.getElementById("scrollToTopBtn").onclick = function() {
       lenis.scrollTo(0); // Scroll to the top
     };
 
-const q1Elements = document.querySelectorAll("#q1");
+const q1Elements = document.querySelectorAll(".accordion-item-trigger");
 
 for (const element of q1Elements) {
     element.onclick = function() {
