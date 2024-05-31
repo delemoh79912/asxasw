@@ -32,6 +32,19 @@ function scrollToTop() {
   }
 }
 */
+document.getElementById("scrollToTopBtn").onclick = function() {
+      lenis.scrollTo(0); // Scroll to the top
+    };
+
+const q1Elements = document.querySelectorAll(".load-more");
+
+for (const element of q1Elements) {
+    element.onclick = function() {
+        setTimeout(() => lenis.resize(), 300);
+        console.log('Lenis resize method called for element:', element);
+    };
+}
+
 
 const revealTypeElements = document.querySelectorAll('.reveal-type');
 revealTypeElements.forEach(element => {
