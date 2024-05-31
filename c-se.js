@@ -36,7 +36,8 @@ document.getElementById("scrollToTopBtn").onclick = function() {
     };
 
 document.getElementById("q1").onclick = function() {
-      lenis.resize(); // Scroll to the top
+      lenis.resize();
+      console.log('Lenis resize method called');
     };
 
 const revealTypeElements = document.querySelectorAll('.reveal-type');
