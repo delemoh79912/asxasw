@@ -52,7 +52,7 @@ revealTypeElements.forEach(element => {
     }
 });
 
-if (window.innerWidth >= 991) {
+if (window.innerWidth >= 992) {
     gsap.registerPlugin(ScrollTrigger)
 
     const splitTypes = document.querySelectorAll('.reveal-type')
