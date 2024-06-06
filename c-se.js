@@ -85,23 +85,24 @@ const section2 = document.querySelector('.animator');
 const leftElements = document.querySelectorAll('.left');
 const rightElements = document.querySelectorAll('.right');
 
-// Create a ScrollTrigger for section2
-ScrollTrigger.create({
-  trigger: section2,
-  start: 'top top',
-  onEnter: () => {
-    // Animate left elements to the left
-    gsap.to(leftElements, {
-      opacity: 0,
-      duration: 1,
-      ease: 'power2.out'
-    });
+gsap.to(leftElements, {
+  xPercent: -20,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".animator",
+    start: "top bottom", // the default values
+    end: "top top",
+    scrub: true
+  }, 
+});
 
-    // Animate right elements to the right
-    gsap.to(rightElements, {
-      opacity: 0,
-      duration: 1,
-      ease: 'power2.out'
-    });
-  }
+gsap.to(rightElements, {
+  xPercent: +20,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".animator",
+    start: "top bottom", // the default values
+    end: "top top",
+    scrub: true
+  }, 
 });
