@@ -87,6 +87,7 @@ const rightElements = document.querySelectorAll('.right');
 
 gsap.to(leftElements, {
   xPercent: -20,
+  opacity: 0,
   ease: "none",
   scrollTrigger: {
     trigger: ".animator",
@@ -98,6 +99,7 @@ gsap.to(leftElements, {
 
 gsap.to(rightElements, {
   xPercent: +20,
+  opacity: 0,
   ease: "none",
   scrollTrigger: {
     trigger: ".animator",
