@@ -82,8 +82,8 @@ splitTypes.forEach((char,i) => {
         })
 
 const section2 = document.querySelector('.animator');
-const leftElements = document.querySelectorAll('.left');
-const rightElements = document.querySelectorAll('.right');
+const leftElements = document.querySelectorAll('.lefto');
+const rightElements = document.querySelectorAll('.righto');
 
 gsap.to(leftElements, {
   xPercent: -20,
