@@ -91,3 +91,33 @@ if (window.innerWidth >= 992) {
       markers: false
     }
   });
+
+
+gsap.registerPlugin(ScrollTrigger);
+const section2 = document.querySelector('.animator');
+const leftElements = document.querySelectorAll('.left');
+const rightElements = document.querySelectorAll('.right');
+
+gsap.to(leftElements, {
+  xPercent: -20,
+  opacity: 0,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".animator",
+    start: "top bottom", // the default values
+    end: "top top",
+    scrub: true
+  }, 
+});
+
+gsap.to(rightElements, {
+  xPercent: +20,
+  opacity: 0,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".animator",
+    start: "top bottom", // the default values
+    end: "top top",
+    scrub: true
+  }, 
+});
