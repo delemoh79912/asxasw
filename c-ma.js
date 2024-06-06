@@ -94,7 +94,7 @@ if (window.innerWidth >= 992) {
 
 
 gsap.registerPlugin(ScrollTrigger);
-const section2 = document.querySelector('.animator');
+const section2 = document.querySelector('.animator-2');
 const leftElements = document.querySelectorAll('.left');
 const rightElements = document.querySelectorAll('.right');
 
@@ -103,7 +103,7 @@ gsap.to(leftElements, {
   opacity: 0,
   ease: "none",
   scrollTrigger: {
-    trigger: ".animator",
+    trigger: ".animator-2",
     start: "top bottom", // the default values
     end: "top top",
     scrub: true
@@ -115,7 +115,7 @@ gsap.to(rightElements, {
   opacity: 0,
   ease: "none",
   scrollTrigger: {
-    trigger: ".animator",
+    trigger: ".animator-2",
     start: "top bottom", // the default values
     end: "top top",
     scrub: true
