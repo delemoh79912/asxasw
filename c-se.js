@@ -92,14 +92,14 @@ ScrollTrigger.create({
   onEnter: () => {
     // Animate left elements to the left
     gsap.to(leftElements, {
-      x: -15,
+      opacity: 0,
       duration: 1,
       ease: 'power2.out'
     });
 
     // Animate right elements to the right
     gsap.to(rightElements, {
-      x: 15,
+      opacity: 0,
       duration: 1,
       ease: 'power2.out'
     });
